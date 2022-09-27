@@ -13,9 +13,10 @@ const CompShowBlog = () => {
     },[])
 
     //procedimiento para mostrar un blog
-    const getBlog = async (id) => {
+    const getBlog = async () => {
         const res = await axios.get(`${URL}/${id}`)
         setBlog(res.data)
+        console.log(res.data);
     }
 
     return(
@@ -23,7 +24,8 @@ const CompShowBlog = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col'>
-                    <div>{blog}</div>
+                    <div>{blog.title}</div>
+                    <div>{blog.content}</div>
                 </div>
             </div>
         </div>
@@ -31,4 +33,4 @@ const CompShowBlog = () => {
     )
 }
 
-export default CompShowBlogs;
+export default CompShowBlog;

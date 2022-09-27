@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import CompShowBlogs from './blog/ShowBlog';
+import CompShowBlog from './blog/Blog';
 import CompCreateBlog from './blog/CreateBlog';
 import CompEditBlog from './blog/EditBlog';
 import ReactDOM from 'react-dom';
