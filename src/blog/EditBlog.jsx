@@ -25,7 +25,7 @@ const CompEditBlog = () => {
     },[])
 
     const getBlogId = async () => {
-        const res = await axios.get(URL+id)
+        const res = await axios.get(`${URL}/${id}`)
         setTitle(res.data.title)
         setContent(res.data.content)
     }
