@@ -13,7 +13,7 @@ const CompShowBlog = () => {
     },[])
 
     //procedimiento para mostrar un blog
-    const getBlog = async () => {
+    const getBlog = async (id) => {
         const res = await axios.get(`${URL}/${id}`)
         setBlog(res.data)
     }
